@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portail ABS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      border: 3px solid #98c288;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    header {
+      position: relative;
+      height: 60px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .logo-container {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    header h1 {
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #b94e48;
+      font-size: 24px;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #f8e287;
+      border: 1px solid #999;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #ffe28a;
+    }
+
+    .matrice {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border: 1px dashed #ccc;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <img src="images/logo_banque.png" alt="Logo Banque Atlantique" class="logo" />
+      </div>
+      <h1>Portail ABS</h1>
+      <!-- <a href="index.html" class="home-link">Acceuil</a> -->
+    </header>
+
+    <main class="app-grid">
+      <button onclick="window.open('http://10.200.2.97:8069/web/login', '_blank')">Odoo</button>
+      <button onclick="window.open('https://banqueatlantiqueciv.sharepoint.com.mcas.ms/sites/BanqueAtlantiqueSenegal/SitePages/CollabHome.aspx')">Sharepoint</button>
+      <button>Sécurité : Accès & Vidéo</button>
+      <button onclick=" window.open('https://loxea-connect.com/Platform/Connect/Login', '_blank')">Loxea Connect : Flotte Auto</button>
+      <button>GMAO</button>
+      <button >Orion</button>
+      <button onclick="window.open('https://shellcard.vivoenergy.com/WP/resources/logout.html', '_blank')">Vivo : Carburant</button>
+      <button>Efficacité Énergétique</button>
+      <button>Imotech</button>
+      <button onclick="window.open('https://cempa.oh-my-code.io/', '_blank')">CFT Chéquiers</button>
+      <button onclick="window.open('http://10.200.2.102/AgirhNet/BASN', '_blank')">AGIRH</button>
+      <button>DHL</button>
+    </main>
+
+    <!-- <section class="matrice">
+      <h2>Matrice de dérogation</h2>
+      <p>À intégrer ici : formulaire ou tableau selon ce qui sera fourni.</p>
+    </section> -->
+  </div>
+</body>
+</html>
